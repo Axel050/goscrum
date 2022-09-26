@@ -1,0 +1,75 @@
+.auth {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth > form {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.auth > form > div {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 5px 0;
+}
+
+.auth > form > div > div {
+  color: var(--global-primary-color);
+  font-size: 15px;
+}
+
+.auth > form > div > * :not(label) {
+  padding: 8px 0px;
+}
+.auth > form > div > input {
+  padding: 8px;
+}
+.auth input {
+  border-radius: var(--global-radius);
+  border: var(--global-border);
+}
+
+.auth button {
+  transition: all 0.3s ease-out;
+  background-color: var(--global-primary-color);
+  border-radius: var(--global-radius);
+  border: 0;
+  color: white;
+  padding: 10px;
+}
+
+.auth button:hover {
+  transition: all 0.3s ease-out;
+  background-color: white;
+  color: var(--global-primary-color);
+  border-radius: var(--global-radius);
+  border: var(--global-border);
+  font-size: 16px;
+  padding: 7px;
+}
+
+.register {
+  text-decoration: none;
+  color: rgb(13, 13, 66);
+}
+
+@media screen and (min-width: 600px) {
+  .auth {
+    background-color: var(--global-bg-color-soft);
+  }
+
+  .auth > form {
+    width: 600px;
+    border: var(--global-border);
+    border-radius: var(--global-radius);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    background-color: white;
+  }
+}

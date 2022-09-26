@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+}
+
+header > img {
+  min-width: 120px;
+  width: 10vw;
+}
+
+.wrapper-rigth-header > span {
+  display: flex;
+  border-radius: 50%;
+  /* background-color: #ff3312; */
+  border: 2px solid red;
+  justify-content: center;
+  cursor: pointer;
+  align-self: center;
+  margin-right: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 2px;
+  margin-left: 25px;
+}
+
+.wrapper-rigth-header {
+  display: flex;
+  /* color: red; */
+}

@@ -1,0 +1,86 @@
+.task-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+}
+
+.task-form h2 {
+  margin: 0;
+}
+
+.task-form > form {
+  width: 100%;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.task-form > form > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+.task-form > form > div > div {
+  flex: 1;
+}
+
+.task-form input,
+.task-form select,
+.task-form textarea {
+  border: 0.5px solid #e6e6e6;
+  border-radius: 8px;
+  color: #000;
+  flex: 1 1;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+  outline: 0;
+  padding: 0.74rem 0.745rem;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.task-form textarea {
+  min-height: 140px;
+}
+
+.task-form button {
+  transition: all 0.3s ease-out;
+  background-color: var(--global-primary-color);
+  border-radius: var(--global-radius);
+  border: 0;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  justify-content: center;
+}
+.task-form button:hover {
+  color: var(--global-primary-color);
+  border-radius: var(--global-radius);
+  border: 1px solid var(--global-primary-color);
+  background-color: white;
+  padding: 10px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+.task-form input.error,
+.task-form select.error,
+.task-form textarea.error {
+  border: 1px solid red;
+}
+
+@media screen and (min-width: 800px) {
+  .task-form {
+    display: inline-flex;
+    max-width: 20vw;
+  }
+}
